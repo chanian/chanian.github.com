@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Nothing to see here</title>
   </head>
   <body>
     <h2>beachballs are cool.</h2>
     <div>there's more interesting stuff here: <a href="http://chanian.com/">http://chanian.com</a></div>
     <div>
-      <iframe src="http://www.linkedin.com/pub/ian-chan/11/ab8/504" style="display:none;"></iframe>
+      <!-- <iframe src="http://www.linkedin.com/pub/ian-chan/11/ab8/504" style="display:none;"></iframe> -->
+      <script>
+        (function () {
+          var iframe = document.createElement('iframe');
+          iframe.style.display = 'none';
+          iframe.src = 'http://www.linkedin.com';
+          document.body.appendChild(iframe);
+        })();
+      </script>
   </body>
 </html>
